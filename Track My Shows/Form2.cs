@@ -72,6 +72,11 @@ namespace Track_My_Shows
             panelUnwatched.Visible = false;
             panelProfile.Visible = true;
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
    
