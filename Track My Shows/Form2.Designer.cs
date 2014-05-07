@@ -44,8 +44,9 @@
             this.groupBox_lastAdded = new System.Windows.Forms.GroupBox();
             this.panelUnwatched = new System.Windows.Forms.Panel();
             this.panelProfile = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.panel2 = new System.Windows.Forms.Panel();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -260,12 +261,23 @@
             // panelProfile
             // 
             this.panelProfile.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panelProfile.Controls.Add(this.panel2);
             this.panelProfile.Controls.Add(this.label1);
             this.panelProfile.Controls.Add(this.progressBar1);
             this.panelProfile.Location = new System.Drawing.Point(0, 49);
             this.panelProfile.Name = "panelProfile";
             this.panelProfile.Size = new System.Drawing.Size(614, 391);
             this.panelProfile.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(12, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
             // 
             // progressBar1
             // 
@@ -278,15 +290,13 @@
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 0;
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(561, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.panel2.BackColor = System.Drawing.Color.GreenYellow;
+            this.panel2.Location = new System.Drawing.Point(15, 101);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(587, 253);
+            this.panel2.TabIndex = 2;
             // 
             // Form2
             // 
@@ -335,5 +345,6 @@
         private System.Windows.Forms.GroupBox groupBox_lastAdded;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
