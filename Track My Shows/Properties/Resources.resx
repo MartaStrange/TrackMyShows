@@ -121,9 +121,6 @@
   <data name="watchIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watchIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="femaleAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="profilefemaleIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profilefemaleIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,55 +130,31 @@
   <data name="sbiconPURPLE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sbiconPURPLE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TMS_first_tryoutlogologo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TMS first tryoutlogologo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TMS_first_tryout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TMS first tryout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TMS1workin_progres614x440" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TMS1workin progres614x440.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search_icon_marine_hi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-icon-marine-hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TMS_first_tryout614x391" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TMS first tryout614x391.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="myshowsIconchoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\myshowsIconchoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TMS_first_tryoutlogologo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TMS first tryoutlogologo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unwatched" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unwatched.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TMS1workin_progresnew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TMS1workin progresnew.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logoutIconchoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoutIconchoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sbicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sbicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="myshowsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\myshowsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TMS1workin_progres614x440_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TMS1workin progres614x440(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMS1workin progres614x463.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="myshowsIconchoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\myshowsIconchoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exclamation_octagon_fram.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMS first tryoutlogo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
