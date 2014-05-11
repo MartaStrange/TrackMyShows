@@ -196,7 +196,7 @@ namespace Track_My_Shows
 
         private void searchBar_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 panelMovie.Visible = false;
                 panelSearch.Visible = true;
@@ -211,24 +211,27 @@ namespace Track_My_Shows
                 {
 
                 }
-                string query = searchBar.Text;
-
-                TmdbMovieSearch results = api.SearchMovie(query, 1);
-
-
-                foreach (MovieResult movie in results.results)
+                else
                 {
-                    //searchResults.Items.Add(movie.original_title);
-                    Movie mov = new Movie();
-                    mov.title = movie.original_title;
-                    mov.tmdbId = movie.id;
+                    string query = searchBar.Text;
 
-                    searchResults.Items.Add(mov);
-                }
+                    TmdbMovieSearch results = api.SearchMovie(query, 1);
 
-                if (searchResults.Items.Count == 0)
-                {
-                    searchResults.Visible = false;
+
+                    foreach (MovieResult movie in results.results)
+                    {
+                        //searchResults.Items.Add(movie.original_title);
+                        Movie mov = new Movie();
+                        mov.title = movie.original_title;
+                        mov.tmdbId = movie.id;
+
+                        searchResults.Items.Add(mov);
+                    }
+
+                    if (searchResults.Items.Count == 0)
+                    {
+                        searchResults.Visible = false;
+                    }
                 }
             }
         }
