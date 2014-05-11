@@ -27,6 +27,7 @@ namespace Track_My_Shows
             this.CenterToScreen();
             Flag = false;
 
+
         }
 
         private void LogIn_btn_Click(object sender, EventArgs e)

@@ -131,6 +131,16 @@ namespace Track_My_Shows.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pixelplay {
+            get {
+                object obj = ResourceManager.GetObject("pixelplay", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap profilefemaleIcon {

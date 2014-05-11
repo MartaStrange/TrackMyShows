@@ -1,4 +1,6 @@
-﻿namespace Track_My_Shows
+﻿using System.Drawing;
+
+namespace Track_My_Shows
 {
     partial class Form2
     {
@@ -29,7 +31,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.PictureBox pictureBox2;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.searchBar = new System.Windows.Forms.TextBox();
@@ -44,10 +45,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panelSearch = new System.Windows.Forms.Panel();
-            this.noMoviesLbl = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.searchResults = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.noMoviesLbl = new System.Windows.Forms.Label();
             this.panelUnwatched = new System.Windows.Forms.Panel();
             this.unwatchedMovies = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -186,7 +186,7 @@
             // 
             this.profileMenuItem.AutoSize = false;
             this.profileMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(71)))), ((int)(((byte)(37)))));
-            this.profileMenuItem.Font = new System.Drawing.Font("PixelPlay", 15F, System.Drawing.FontStyle.Bold);
+            this.profileMenuItem.Font = new System.Drawing.Font("pixelplay", 15F, System.Drawing.FontStyle.Bold);
             this.profileMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(16)))));
             this.profileMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.profileMenuItem.Name = "profileMenuItem";
@@ -198,7 +198,7 @@
             this.profileMenuItem.Click += new System.EventHandler(this.profileMenuItem_Click);
             // 
             // showsMenuItem
-            // 
+            //
             this.showsMenuItem.AutoSize = false;
             this.showsMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(71)))), ((int)(((byte)(37)))));
             this.showsMenuItem.Font = new System.Drawing.Font("PixelPlay", 15F, System.Drawing.FontStyle.Bold);
@@ -299,7 +299,6 @@
             this.panelSearch.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.panelSearch.Controls.Add(this.searchResults);
             this.panelSearch.Controls.Add(this.label15);
-            this.panelSearch.Controls.Add(this.button1);
             this.panelSearch.Controls.Add(this.noMoviesLbl);
             this.panelSearch.Location = new System.Drawing.Point(0, 72);
             this.panelSearch.Name = "panelSearch";
@@ -307,15 +306,19 @@
             this.panelSearch.TabIndex = 1;
             this.panelSearch.Visible = false;
             // 
-            // noMoviesLbl
+            // searchResults
             // 
-            this.noMoviesLbl.AutoSize = true;
-            this.noMoviesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.noMoviesLbl.Location = new System.Drawing.Point(34, 51);
-            this.noMoviesLbl.Name = "noMoviesLbl";
-            this.noMoviesLbl.Size = new System.Drawing.Size(248, 20);
-            this.noMoviesLbl.TabIndex = 11;
-            this.noMoviesLbl.Text = "No movies found, try different title.";
+            this.searchResults.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.searchResults.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchResults.FormattingEnabled = true;
+            this.searchResults.ItemHeight = 20;
+            this.searchResults.Location = new System.Drawing.Point(34, 51);
+            this.searchResults.Name = "searchResults";
+            this.searchResults.Size = new System.Drawing.Size(563, 320);
+            this.searchResults.Sorted = true;
+            this.searchResults.TabIndex = 2;
+            this.searchResults.DoubleClick += new System.EventHandler(this.searchResults_DoubleClick);
             // 
             // label15
             // 
@@ -328,31 +331,15 @@
             this.label15.TabIndex = 4;
             this.label15.Text = "Search results";
             // 
-            // button1
+            // noMoviesLbl
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(71)))), ((int)(((byte)(37)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(520, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // searchResults
-            // 
-            this.searchResults.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.searchResults.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.searchResults.FormattingEnabled = true;
-            this.searchResults.ItemHeight = 20;
-            this.searchResults.Location = new System.Drawing.Point(34, 51);
-            this.searchResults.Name = "searchResults";
-            this.searchResults.Size = new System.Drawing.Size(563, 300);
-            this.searchResults.Sorted = true;
-            this.searchResults.TabIndex = 2;
-            this.searchResults.DoubleClick += new System.EventHandler(this.searchResults_DoubleClick);
+            this.noMoviesLbl.AutoSize = true;
+            this.noMoviesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.noMoviesLbl.Location = new System.Drawing.Point(34, 51);
+            this.noMoviesLbl.Name = "noMoviesLbl";
+            this.noMoviesLbl.Size = new System.Drawing.Size(248, 20);
+            this.noMoviesLbl.TabIndex = 11;
+            this.noMoviesLbl.Text = "No movies found, try different title.";
             // 
             // panelUnwatched
             // 
@@ -486,7 +473,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(556, 41);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // currentUsername
             // 
@@ -740,7 +726,7 @@
             this.Controls.Add(this.panelUnwatched);
             this.Controls.Add(this.panelMovie);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = Properties.Resources.icon;
+            this.Icon = global::Track_My_Shows.Properties.Resources.icon;
             this.MaximumSize = new System.Drawing.Size(614, 463);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -805,7 +791,6 @@
         private System.Windows.Forms.Label currentTotal;
         private System.Windows.Forms.Label currentUsername;
         private System.Windows.Forms.Panel panelSearch;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox searchResults;
         private System.Windows.Forms.Button closeBtn;
         private System.Windows.Forms.Button minimizeBtn;

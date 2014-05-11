@@ -11,6 +11,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WatTmdb.V3;
+using System.Drawing.Text;
+using System.IO;
 
 namespace Track_My_Shows
 {
@@ -22,6 +24,7 @@ namespace Track_My_Shows
         private Movie active = null;
         public User user { get; set; }
 
+        private PrivateFontCollection pfc = new PrivateFontCollection();
         public Form2()
         {
             InitializeComponent();
@@ -33,8 +36,7 @@ namespace Track_My_Shows
         {
             updateUserData();
             panelProfile.Visible = true;
-            //noMoviesLbl.Visible = false;
-           
+
         }
 
         private void updateUserData()
@@ -93,6 +95,10 @@ namespace Track_My_Shows
 
             searchResults.Items.Clear();
 
+            if(searchBar.Text == "")
+            {
+
+            }
             string query = searchBar.Text;
 
             TmdbMovieSearch results = api.SearchMovie(query, 1);
@@ -140,11 +146,6 @@ namespace Track_My_Shows
             panelProfile.Visible = true;
             panelMovie.Visible = false;
             panelSearch.Visible = false;
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -204,6 +205,10 @@ namespace Track_My_Shows
 
                 searchResults.Items.Clear();
 
+                if (searchBar.Text == "")
+                {
+
+                }
                 string query = searchBar.Text;
 
                 TmdbMovieSearch results = api.SearchMovie(query, 1);

@@ -20,7 +20,7 @@ namespace Track_My_Shows
                 return connection;
             }
 
-            string baseFolder = AppDomain.CurrentDomain.BaseDirectory; // +"..//..//..//..//";
+            string baseFolder = AppDomain.CurrentDomain.BaseDirectory;// +"..//..//..//..//";
             Console.WriteLine(baseFolder);
 
             connection = new SQLiteConnection("Data Source=" + Path.Combine(baseFolder, "tms.sqlite") + ";");
