@@ -95,30 +95,32 @@ namespace Track_My_Shows
 
             searchResults.Items.Clear();
 
-            if(searchBar.Text == "")
+            if (searchBar.Text == "")
             {
 
             }
-            string query = searchBar.Text;
-
-            TmdbMovieSearch results = api.SearchMovie(query, 1);
-
-           
-            foreach (MovieResult movie in results.results)
+            else
             {
-                //searchResults.Items.Add(movie.original_title);
-                Movie mov = new Movie();
-                mov.title = movie.original_title;
-                mov.tmdbId = movie.id;
+                string query = searchBar.Text;
 
-                searchResults.Items.Add(mov);
-            }
+                TmdbMovieSearch results = api.SearchMovie(query, 1);
 
-           if (searchResults.Items.Count == 0) 
-            {
-                searchResults.Visible = false;
+
+                foreach (MovieResult movie in results.results)
+                {
+                    //searchResults.Items.Add(movie.original_title);
+                    Movie mov = new Movie();
+                    mov.title = movie.original_title;
+                    mov.tmdbId = movie.id;
+
+                    searchResults.Items.Add(mov);
+                }
+
+                if (searchResults.Items.Count == 0)
+                {
+                    searchResults.Visible = false;
+                }
             }
-           
         }
 
         private void showsMenuItem_Click(object sender, EventArgs e)
